@@ -3,7 +3,7 @@ body {
     color: #4B4B4B;
     padding: 50px 30px;
     padding-top: 100px;
-    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    background: linear-gradient(135deg, #8A2BE2 0%, #6A1B9A 100%); /* Gradien violet */
 }
 
 body.no-scroll {
@@ -11,8 +11,8 @@ body.no-scroll {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.9); /* Lebih solid untuk menghindari bekas */
-    backdrop-filter: blur(15px); /* Efek blur lebih kuat */
+    background-color: rgba(255, 255, 255, 0.9); /* Putih dengan transparansi */
+    backdrop-filter: blur(15px); /* Efek glass */
     padding: 15px 32px;
     position: fixed;
     top: 0;
@@ -30,7 +30,7 @@ body.no-scroll {
 }
 
 .navbar-brand {
-    color: #333;
+    color: #6A1B9A; /* Warna violet */
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -47,7 +47,7 @@ body.no-scroll {
 }
 
 .spinner-border.custom-spinner {
-    color: #333;
+    color: #6A1B9A; /* Warna violet */
 }
 
 .modal-content {
@@ -74,7 +74,7 @@ body.no-scroll {
 }
 
 #apiQueryInputContainer input:focus, #searchInput:focus {
-    outline: 3px solid #ff6f61 !important; /* Warna pink cerah */
+    outline: 3px solid #8A2BE2 !important; /* Warna violet */
     border: none;
     box-shadow: none;
 }
@@ -93,7 +93,7 @@ body.no-scroll {
     display: block;
     text-decoration: underline;
     margin-bottom: 0.3rem;
-    color: #ff6f61; /* Warna pink cerah */
+    color: #8A2BE2; /* Warna violet */
 }
 
 #loadingScreen {
@@ -123,11 +123,11 @@ body.no-scroll {
     font-size: 32px;
     line-height: 1;
     z-index: 2;
-    color: #333;
+    color: #6A1B9A; /* Warna violet */
 }
 
 #version {
-    background-color: #ff6f61; /* Warna pink cerah */
+    background-color: #8A2BE2; /* Warna violet */
     color: white;
     padding: 5px 12px;
     font-size: 11px;
@@ -143,7 +143,7 @@ body.no-scroll {
     padding: 20px 25px;
     background-color: rgba(255, 255, 255, 0.9); /* Efek glass */
     backdrop-filter: blur(15px); /* Efek blur */
-    color: #333;
+    color: #6A1B9A; /* Warna violet */
     border-radius: 10px;
     height: 80px;
     display: flex;
@@ -173,7 +173,7 @@ body.no-scroll {
 }
 
 .btn-dark {
-    background-color: #333;
+    background-color: #8A2BE2; /* Warna violet */
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -189,8 +189,8 @@ body.no-scroll {
 }
 
 .param-container .form-control:focus {
-    border-color: #ff6f61; /* Warna pink cerah */
-    box-shadow: 0 0 0 0.25rem rgba(255, 111, 97, 0.25); /* Warna pink cerah */
+    border-color: #8A2BE2; /* Warna violet */
+    box-shadow: 0 0 0 0.25rem rgba(138, 43, 226, 0.25); /* Warna violet */
 }
 
 @media screen and (min-width: 768px) {
