@@ -11,20 +11,22 @@ body.no-scroll {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.8); /* Efek glass dengan transparansi */
-    backdrop-filter: blur(10px); /* Efek blur untuk glass */
+    background-color: rgba(255, 255, 255, 0.9); /* Lebih solid untuk menghindari bekas */
+    backdrop-filter: blur(15px); /* Efek blur lebih kuat */
     padding: 15px 32px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Garis halus di bawah navbar */
 }
 
 .navbar.scrolled {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     background-color: rgba(255, 255, 255, 0.95); /* Lebih solid saat di-scroll */
+    backdrop-filter: blur(20px); /* Blur lebih kuat saat di-scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .navbar-brand {
@@ -50,9 +52,10 @@ body.no-scroll {
 
 .modal-content {
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Efek glass */
-    backdrop-filter: blur(10px); /* Efek blur */
+    background-color: rgba(255, 255, 255, 0.9); /* Efek glass */
+    backdrop-filter: blur(15px); /* Efek blur */
     border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Garis halus di sekitar modal */
 }
 
 .modal-dialog {
@@ -99,8 +102,8 @@ body.no-scroll {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9); /* Efek glass */
-    backdrop-filter: blur(10px); /* Efek blur */
+    background-color: rgba(255, 255, 255, 0.95); /* Efek glass */
+    backdrop-filter: blur(20px); /* Efek blur */
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -138,14 +141,15 @@ body.no-scroll {
 
 .hero-section {
     padding: 20px 25px;
-    background-color: rgba(255, 255, 255, 0.8); /* Efek glass */
-    backdrop-filter: blur(10px); /* Efek blur */
+    background-color: rgba(255, 255, 255, 0.9); /* Efek glass */
+    backdrop-filter: blur(15px); /* Efek blur */
     color: #333;
     border-radius: 10px;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Garis halus di sekitar hero-section */
 }
 
 .hero-section > div {
