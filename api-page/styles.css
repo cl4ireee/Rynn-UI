@@ -10,11 +10,12 @@ body.no-scroll {
     overflow: hidden;
 }
 
-/* Animasi warna untuk garis layout */
-@keyframes borderAnimation {
+/* Animasi smooth untuk garis layout */
+@keyframes smoothBorderAnimation {
     0% { border-color: #00BFFF; } /* Biru */
-    50% { border-color: #FF69B4; } /* Pink */
-    100% { border-color: #FFD700; } /* Kuning */
+    33% { border-color: #FF69B4; } /* Pink */
+    66% { border-color: #FFD700; } /* Kuning */
+    100% { border-color: #00BFFF; } /* Biru */
 }
 
 .navbar {
@@ -26,17 +27,16 @@ body.no-scroll {
     left: 0;
     right: 0;
     z-index: 100;
-    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-    border-bottom: 2px solid #00BFFF; /* Garis biru cerah */
-    animation: borderAnimation 3s infinite; /* Animasi warna garis */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* Awalnya tidak ada garis */
 }
 
 .navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.95); /* Lebih solid saat di-scroll */
     backdrop-filter: blur(20px); /* Blur lebih kuat saat di-scroll */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    border-bottom: 2px solid #FF69B4; /* Garis pink cerah saat di-scroll */
-    animation: borderAnimation 3s infinite; /* Animasi warna garis */
+    border-bottom: 2px solid #00BFFF; /* Garis biru cerah saat di-scroll */
+    animation: smoothBorderAnimation 6s infinite ease-in-out; /* Animasi smooth */
 }
 
 .navbar-brand {
@@ -66,7 +66,7 @@ body.no-scroll {
     backdrop-filter: blur(15px); /* Efek blur */
     border-radius: 10px;
     border: 2px solid #00BFFF; /* Garis biru cerah */
-    animation: borderAnimation 3s infinite; /* Animasi warna garis */
+    animation: smoothBorderAnimation 6s infinite ease-in-out; /* Animasi smooth */
 }
 
 .modal-dialog {
@@ -107,6 +107,7 @@ body.no-scroll {
     color: #00BFFF; /* Warna biru cerah */
 }
 
+/* Loading screen dengan efek garis layout header */
 #loadingScreen {
     position: fixed;
     top: 0;
@@ -121,6 +122,10 @@ body.no-scroll {
     align-items: center;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
+}
+
+#loadingScreen .navbar {
+    border-bottom: none; /* Tidak ada garis layout header saat loading */
 }
 
 #nameContainer {
@@ -161,7 +166,7 @@ body.no-scroll {
     align-items: center;
     justify-content: space-between;
     border: 2px solid #00BFFF; /* Garis biru cerah */
-    animation: borderAnimation 3s infinite; /* Animasi warna garis */
+    animation: smoothBorderAnimation 6s infinite ease-in-out; /* Animasi smooth */
 }
 
 .hero-section > div {
