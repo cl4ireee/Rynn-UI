@@ -3,7 +3,7 @@ body {
     color: #4B4B4B;
     padding: 50px 30px;
     padding-top: 100px;
-    background: linear-gradient(135deg, #8A2BE2 0%, #6A1B9A 100%); /* Gradien violet */
+    background: #ffffff; /* Background putih */
 }
 
 body.no-scroll {
@@ -20,17 +20,18 @@ body.no-scroll {
     right: 0;
     z-index: 100;
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Garis halus di bawah navbar */
+    border-bottom: 2px solid #FFD700; /* Garis kuning cerah */
 }
 
 .navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.95); /* Lebih solid saat di-scroll */
     backdrop-filter: blur(20px); /* Blur lebih kuat saat di-scroll */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-bottom: 2px solid #FF69B4; /* Garis pink cerah saat di-scroll */
 }
 
 .navbar-brand {
-    color: #6A1B9A; /* Warna violet */
+    color: #00BFFF; /* Warna biru cerah */
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -47,7 +48,7 @@ body.no-scroll {
 }
 
 .spinner-border.custom-spinner {
-    color: #6A1B9A; /* Warna violet */
+    color: #00BFFF; /* Warna biru cerah */
 }
 
 .modal-content {
@@ -55,7 +56,7 @@ body.no-scroll {
     background-color: rgba(255, 255, 255, 0.9); /* Efek glass */
     backdrop-filter: blur(15px); /* Efek blur */
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Garis halus di sekitar modal */
+    border: 2px solid #FFD700; /* Garis kuning cerah */
 }
 
 .modal-dialog {
@@ -74,7 +75,7 @@ body.no-scroll {
 }
 
 #apiQueryInputContainer input:focus, #searchInput:focus {
-    outline: 3px solid #8A2BE2 !important; /* Warna violet */
+    outline: 3px solid #00BFFF !important; /* Warna biru cerah */
     border: none;
     box-shadow: none;
 }
@@ -93,7 +94,7 @@ body.no-scroll {
     display: block;
     text-decoration: underline;
     margin-bottom: 0.3rem;
-    color: #8A2BE2; /* Warna violet */
+    color: #00BFFF; /* Warna biru cerah */
 }
 
 #loadingScreen {
@@ -123,11 +124,11 @@ body.no-scroll {
     font-size: 32px;
     line-height: 1;
     z-index: 2;
-    color: #6A1B9A; /* Warna violet */
+    color: #00BFFF; /* Warna biru cerah */
 }
 
 #version {
-    background-color: #8A2BE2; /* Warna violet */
+    background-color: #FF69B4; /* Warna pink cerah */
     color: white;
     padding: 5px 12px;
     font-size: 11px;
@@ -143,13 +144,13 @@ body.no-scroll {
     padding: 20px 25px;
     background-color: rgba(255, 255, 255, 0.9); /* Efek glass */
     backdrop-filter: blur(15px); /* Efek blur */
-    color: #6A1B9A; /* Warna violet */
+    color: #00BFFF; /* Warna biru cerah */
     border-radius: 10px;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Garis halus di sekitar hero-section */
+    border: 2px solid #FFD700; /* Garis kuning cerah */
 }
 
 .hero-section > div {
@@ -173,7 +174,7 @@ body.no-scroll {
 }
 
 .btn-dark {
-    background-color: #8A2BE2; /* Warna violet */
+    background-color: #00BFFF; /* Warna biru cerah */
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -189,8 +190,8 @@ body.no-scroll {
 }
 
 .param-container .form-control:focus {
-    border-color: #8A2BE2; /* Warna violet */
-    box-shadow: 0 0 0 0.25rem rgba(138, 43, 226, 0.25); /* Warna violet */
+    border-color: #00BFFF; /* Warna biru cerah */
+    box-shadow: 0 0 0 0.25rem rgba(0, 191, 255, 0.25); /* Warna biru cerah */
 }
 
 @media screen and (min-width: 768px) {
