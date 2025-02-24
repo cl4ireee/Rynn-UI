@@ -49,7 +49,9 @@ body.no-scroll {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(135deg, #ffffff 25%, #f0f8ff 50%, #fff0f5 75%, #ffffff 100%);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
     backdrop-filter: blur(20px);
     padding: 15px 32px;
     position: fixed;
@@ -403,4 +405,4 @@ body.no-scroll {
         max-width: 100%;
         max-height: 60vh;
     }
-                                    }
+}
